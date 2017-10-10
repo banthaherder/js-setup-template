@@ -27,6 +27,7 @@ ___
 1. `npm install bower-files --save-dev`
 1. `npm install browser-sync --save-dev`
 1. `npm install watchify --save-dev`
+1. `npm install jasmine --save-dev`
 1. `npm install karma --save-dev`
 1. `npm install karma-jasmine jasmine-core --save-dev`
 1. `npm install karma-chrome-launcher --save-dev`
@@ -36,7 +37,7 @@ ___
 1. `npm install karma-jasmine-html-reporter --save-dev`
 
 #### OR...Master npm Setup Command (Must run `npm init` first)
-_`npm install gulp bower browserify vinyl-source-stream gulp-concat gulp-uglify gulp-util del jshint gulp-jshint bower-files browser-sync watchify karma karma-jasmine jasmine-core karma-chrome-launcher karma-cli karma-browserify karma-jquery karma-jasmine-html-reporter --save-dev`_
+_`npm install gulp bower browserify vinyl-source-stream gulp-concat gulp-uglify gulp-util del jshint gulp-jshint bower-files browser-sync watchify jasmine karma karma-jasmine jasmine-core karma-chrome-launcher karma-cli karma-browserify karma-jquery karma-jasmine-html-reporter --save-dev`_
 ___
 ### bower
 * `bower init`
@@ -54,6 +55,18 @@ ___
 * `bower init`
 * `bower install`
 * `gulp build`
+___
+### Jasmine (Install before Karma)
+* ` ./node_modules/.bin/jasmine init`
+_Make sure to include the below "scripts" in the package.json file._
+
+```
+...
+"scripts": {
+  "test": "jasmine"
+}
+...
+```
 ___
 ### karma --optional
 _Use template "karma.conf.js"_
