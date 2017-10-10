@@ -7,6 +7,7 @@ var utilities = require('gulp-util');
 var del = require('del');
 var jshint = require('gulp-jshint');
 var browserSync = require('browser-sync').create();
+var babelify = require("babelify");
 
 var lib = require('bower-files')({
   "overrides":{
@@ -31,6 +32,9 @@ gulp.task('concatInterface', function() {
 
 gulp.task('jsBrowserify', ['concatInterface'], function() {
   return browserify({ entries: ['./tmp/allConcat.js'] })
+    .transform(babelify.configure({
+      presets: ["es2015"]
+    }))
     .bundle()
     .pipe(source('app.js'))
     .pipe(gulp.dest('./build/js'));

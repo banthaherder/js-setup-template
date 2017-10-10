@@ -14,6 +14,10 @@ ___
 ```
 ___
 ## npm
+_If you don't want to fuss with installing each package individually, just copy and paste the package.json, gulpfile.js, and karma.conf.js files, then `npm install`._
+
+_OR_
+
 1. `npm init`
 1. `npm install gulp --save-dev` (global install: `npm install gulp -g`)
 1. `npm install bower -g`
@@ -36,6 +40,7 @@ ___
 1. `npm install karma-browserify --save-dev`
 1. `npm install karma-jquery --save-dev`
 1. `npm install karma-jasmine-html-reporter --save-dev`
+1. `npm install babelify babel-preset-es2015 --save-dev`
 
 #### OR...Master npm Setup Command (Must run `npm init` first)
 _`npm install gulp bower browserify vinyl-source-stream gulp-concat gulp-uglify gulp-util del jshint gulp-jshint bower-files browser-sync watchify jasmine karma karma-jasmine jasmine-core karma-chrome-launcher karma-cli karma-browserify karma-jquery karma-jasmine-html-reporter --save-dev`_
@@ -73,10 +78,21 @@ ___
 * Make sure the frontend js has corresponding requires at the top of the file (ex. `var ComputerPlayer = require('./../js/pig.js').computerPlayerModule;`)
 * Run `gulp build` before you fire up the browser.
 ___
+### jshint (ES6)
+_configure jshint for ES6 by creating a .jshintrc file in the root directory._
+
+`{ "esversion":6 }`
+___
 # Javascript Track Project Clone
+
 * `npm init`
 * `npm install`
 * `npm install bower -g`
 * `bower init`
 * `bower install`
 * `gulp build`
+___
+# BrowserSync
+_Install a package called BrowserSync to implement our development server with live reloading._
+
+`gulp serve`
