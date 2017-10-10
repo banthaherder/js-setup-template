@@ -52,3 +52,8 @@ _Use template "karma.conf.js"_
 _OR_
 
 _`karma init` in root proj directory_
+___
+### gulp stuff
+* Make sure the backend js has corresponding exports (ex. `exports.module_NameModule = Module_Name;`)
+* Make sure the frontend js has corresponding requires (ex. `var ComputerPlayer = require('./../js/pig.js').computerPlayerModule;`)
+* Run `gulp build`
