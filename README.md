@@ -2,6 +2,15 @@
 ___
 ### Project Files
 `touch index.html .gitignore README.md gulpfile.js js/NAME_OF_PROJECT.js js/NAME_OF_PROJECT-INTERFACE.js`
+
+##### index.html header
+```
+<head>
+  <link rel="stylesheet" href="build/css/vendor.css">
+  <script src="build/js/vendor.min.js"></script>
+  <script type="text/javascript" src="build/js/app.js"></script>
+</head>
+```
 ___
 ## npm
 1. `npm init`
