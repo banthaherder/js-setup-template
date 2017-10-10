@@ -7,6 +7,7 @@ ___
 ```
 <head>
   <link rel="stylesheet" href="build/css/vendor.css">
+  <link href="build/css/vendor.css" rel="stylesheet" type="text/css">
   <script src="build/js/vendor.min.js"></script>
   <script type="text/javascript" src="build/js/app.js"></script>
 </head>
@@ -42,19 +43,11 @@ ___
 ### bower
 * `bower init`
 * `bower install jquery --save`
-* `bower install bootstrap#v4.0.0 --save`
+* `bower install bootstrap#v4.0.0-beta --save`
 * `bower install moment --save`
 
 #### OR...Master npm Setup Command (Must run `bower init` first)
 _`bower install jquery bootstrap#v4.0.0-beta moment --save`_
-___
-# Javascript Track Project Clone
-* `npm init`
-* `npm install`
-* `npm install bower -g`
-* `bower init`
-* `bower install`
-* `gulp build`
 ___
 ### Jasmine (Install before Karma)
 * ` ./node_modules/.bin/jasmine init`
@@ -68,14 +61,22 @@ _Make sure to include the below "scripts" in the package.json file._
 ...
 ```
 ___
-### karma --optional
-_Use template "karma.conf.js"_
+### Karma
+_Use provided template "karma.conf.js" instead._
 
 _OR_
 
 _`karma init` in root proj directory_
 ___
 ### gulp stuff
-* Make sure the backend js has corresponding exports (ex. `exports.module_NameModule = Module_Name;`)
-* Make sure the frontend js has corresponding requires (ex. `var ComputerPlayer = require('./../js/pig.js').computerPlayerModule;`)
-* Run `gulp build`
+* Make sure the backend js has corresponding exports at the bottom of the file (ex. `exports.module_NameModule = Module_Name;`)
+* Make sure the frontend js has corresponding requires at the top of the file (ex. `var ComputerPlayer = require('./../js/pig.js').computerPlayerModule;`)
+* Run `gulp build` before you fire up the browser.
+___
+# Javascript Track Project Clone
+* `npm init`
+* `npm install`
+* `npm install bower -g`
+* `bower init`
+* `bower install`
+* `gulp build`
