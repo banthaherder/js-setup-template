@@ -56,15 +56,6 @@ _`bower install jquery bootstrap#v4.0.0-beta moment --save`_
 ___
 ### Jasmine (Install before Karma)
 * ` ./node_modules/.bin/jasmine init`
-_Make sure to include the below "scripts" in the package.json file._
-
-```
-...
-"scripts": {
-  "test": "jasmine"
-}
-...
-```
 ___
 ### Karma
 _Use provided template "karma.conf.js" instead._
