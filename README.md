@@ -43,7 +43,7 @@ _OR_
 1. `npm install babelify babel-preset-es2015 --save-dev`
 
 #### OR...Master npm Setup Command (Must run `npm init` first)
-_`npm install gulp bower browserify vinyl-source-stream gulp-concat gulp-uglify gulp-util del jshint gulp-jshint bower-files browser-sync watchify jasmine karma karma-jasmine jasmine-core karma-chrome-launcher karma-cli karma-browserify karma-jquery karma-jasmine-html-reporter --save-dev`_
+_`npm install gulp bower browserify vinyl-source-stream gulp-concat gulp-uglify gulp-util del jshint gulp-jshint bower-files browser-sync watchify jasmine karma karma-jasmine jasmine-core karma-chrome-launcher karma-cli karma-browserify karma-jquery karma-jasmine-html-reporter babelify babel-preset-es2015 --save-dev`_
 ___
 ### bower
 * `bower init`
