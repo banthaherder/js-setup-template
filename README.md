@@ -14,74 +14,36 @@ ___
 ```
 ___
 ## npm
-_If you don't want to fuss with installing each package individually, just copy and paste the package.json, gulpfile.js, and karma.conf.js files, then `npm install`._
-
-_OR_
-
-1. `npm init`
-1. `npm install gulp --save-dev` (global install: `npm install gulp -g`)
-1. `npm install bower -g`
-1. `npm install browserify --save-dev`
-1. `npm install vinyl-source-stream --save-dev`
-1. `npm install gulp-concat --save-dev`
-1. `npm install gulp-uglify --save-dev`
-1. `npm install gulp-util --save-dev`
-1. `npm install del --save-dev`
-1. `npm install jshint --save-dev`
-1. `npm install gulp-jshint --save-dev`
-1. `npm install bower-files --save-dev`
-1. `npm install browser-sync --save-dev`
-1. `npm install watchify --save-dev`
-1. `npm install jasmine --save-dev`
-1. `npm install karma --save-dev`
-1. `npm install karma-jasmine jasmine-core --save-dev`
-1. `npm install karma-chrome-launcher --save-dev`
-1. `npm install karma-cli --save-dev`
-1. `npm install karma-browserify --save-dev`
-1. `npm install karma-jquery --save-dev`
-1. `npm install karma-jasmine-html-reporter --save-dev`
-1. `npm install babelify babel-preset-es2015 --save-dev`
+Use the package.json (fill in you project name at the top of the gile), gulpfile.js, and karma.conf.js files, then `npm install`.
 
 #### OR...Master npm Setup Command (Must run `npm init` first)
 _`npm install gulp bower browserify vinyl-source-stream gulp-concat gulp-uglify gulp-util del jshint gulp-jshint bower-files browser-sync watchify jasmine karma karma-jasmine jasmine-core karma-chrome-launcher karma-cli karma-browserify karma-jquery karma-jasmine-html-reporter --save-dev`_
 ___
 ### bower
 * `bower init`
-* `bower install jquery --save`
-* `bower install bootstrap#v4.0.0-beta --save`
-* `bower install moment --save`
-
-#### OR...Master npm Setup Command (Must run `bower init` first)
-_`bower install jquery bootstrap#v4.0.0-beta moment --save`_
+* `bower install jquery bootstrap#v4.0.0-beta --save`
 ___
 ### Jasmine (Install before Karma)
 * ` ./node_modules/.bin/jasmine init`
 ___
 ### Karma
-_Use provided template "karma.conf.js" instead._
+Use provided template "karma.conf.js".
+
+<!-- ### gulp stuff
+* Make sure the backend js has corresponding exports at the bottom of the file (ex. `exports.module_NameModule = Module_Name;`)
+* Make sure the frontend js has corresponding requires at the top of the file (ex. `var ComputerPlayer = require('./../js/pig.js').computerPlayerModule;`)
+* Run `gulp build` before you fire up the browser. -->
+___
+### jshint (ES6)
+Use the provided .jshintrc file
 
 _OR_
 
-_`karma init` in root proj directory_
+Configure jshint for ES6 by creating a .jshintrc file in the root directory:
+_`{ "esversion":6 }`_
 ___
-### gulp stuff
-* Make sure the backend js has corresponding exports at the bottom of the file (ex. `exports.module_NameModule = Module_Name;`)
-* Make sure the frontend js has corresponding requires at the top of the file (ex. `var ComputerPlayer = require('./../js/pig.js').computerPlayerModule;`)
-* Run `gulp build` before you fire up the browser.
-___
-### jshint (ES6)
-_configure jshint for ES6 by creating a .jshintrc file in the root directory._
-
-`{ "esversion":6 }`
-___
-# Javascript Track Project Clone
+# Cloning an Existing Prject
 
 * `npm install`
-* `npm install bower -g`
 * `bower install`
 * `gulp build`
-___
-# BrowserSync
-_Install a package called BrowserSync to implement our development server with live reloading._
-
-`gulp serve`
