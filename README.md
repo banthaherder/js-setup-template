@@ -26,8 +26,6 @@ ___
 ### Jasmine (Install before Karma)
 * ` ./node_modules/.bin/jasmine init`
 ___
-### Karma
-Use provided template "karma.conf.js".
 
 <!-- ### gulp stuff
 * Make sure the backend js has corresponding exports at the bottom of the file (ex. `exports.module_NameModule = Module_Name;`)
