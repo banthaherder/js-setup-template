@@ -17,7 +17,7 @@ ___
 Use the package.json (fill in you project name at the top of the gile), gulpfile.js, and karma.conf.js files, then `npm install`.
 
 #### OR...Master npm Setup Command (Must run `npm init` first)
-_`npm install gulp bower browserify vinyl-source-stream gulp-concat gulp-uglify gulp-util del jshint gulp-jshint bower-files browser-sync watchify jasmine karma karma-jasmine jasmine-core karma-chrome-launcher karma-cli karma-browserify karma-jquery karma-jasmine-html-reporter --save-dev`_
+_`npm install gulp bower browserify vinyl-source-stream gulp-concat gulp-uglify gulp-util del jshint gulp-jshint bower-files browser-sync watchify jasmine karma karma-jasmine jasmine-core karma-chrome-launcher karma-cli karma-browserify karma-jquery karma-jasmine-html-reporter babelify babel-preset-es2015 --save-dev`_
 ___
 ### bower
 * `bower init`
