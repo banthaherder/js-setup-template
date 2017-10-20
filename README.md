@@ -14,7 +14,7 @@ ___
 ```
 ___
 ## npm
-Use the package.json (fill in you project name at the top of the gile), gulpfile.js, and karma.conf.js files, then `npm install`.
+Use the package.json (fill in your project name at the top of the gulp), gulpfile.js, and karma.conf.js files, then `npm install`.
 
 #### OR...Master npm Setup Command (Must run `npm init` first)
 _`npm install gulp bower browserify vinyl-source-stream gulp-concat gulp-uglify gulp-util del jshint gulp-jshint bower-files browser-sync watchify jasmine karma karma-jasmine jasmine-core karma-chrome-launcher karma-cli karma-browserify karma-jquery karma-jasmine-html-reporter babelify babel-preset-es2015 --save-dev`_
@@ -26,8 +26,6 @@ ___
 ### Jasmine (Install before Karma)
 * ` ./node_modules/.bin/jasmine init`
 ___
-### Karma
-Use provided template "karma.conf.js".
 
 <!-- ### gulp stuff
 * Make sure the backend js has corresponding exports at the bottom of the file (ex. `exports.module_NameModule = Module_Name;`)

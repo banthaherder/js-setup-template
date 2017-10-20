@@ -38,6 +38,7 @@ node_modules/
 .DS_Store
 build/
 tmp/
+*.env
 
 # bower #
 ###########
